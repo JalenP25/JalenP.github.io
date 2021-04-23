@@ -8,5 +8,10 @@ btn.addEventListener("click", getQuote);
 function getQuote() {
     return fetch('https://animechan.vercel.app/api/random')
     .then(response => response.json())
-    .then(quote => console.log(quote))
+    .then(data => {
+        // anime.innerHTML = data.anime;
+        quote.innerHTML = `"${data.quote}"`;
+        character.innerHTML = data.character;
+        
+    })
     }
