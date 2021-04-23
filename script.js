@@ -1,9 +1,12 @@
-const stock = document.getElementById('stock');
+const anime = document.getElementById('anime');
+const quote = document.getElementById('quote');
+const character = document.getElementById('character');
 const btn = document.getElementById('btn');
 
-btn.addEventListener("click", getStock);
+btn.addEventListener("click", getQuote);
 
-function getStock() {
-    return fetch("https://api.twelvedata.com/stocks?symbol=AAPL")
-    .then(res => console.log(res.json))
-}
+function getQuote() {
+    return fetch('https://animechan.vercel.app/api/random')
+    .then(response => response.json())
+    .then(quote => console.log(quote))
+    }
