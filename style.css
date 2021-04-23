@@ -1,0 +1,16 @@
+.holder{
+    border-style: outset;
+    border-width: thick;
+    border-color: rgb(149, 212, 231);
+    padding: 10px;
+    display: block;
+}
+
+#btn {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
