@@ -11,12 +11,13 @@ function getQuote() {
     .then(data => {
         anime.innerHTML = data.anime;
         quote.innerHTML = `"${data.quote}"`;
-        character.innerHTML = data.character;
+        character.innerHTML = `~${data.character}`;
     })
     }
 
 let count = 0;
-const colors = ["#00ffff", "#ffff00", "#ff00ff"];
+const colors = ["#00ffff", "#ffff00", "#ff00ff", "#F0E68C", "#808000", "#7DF9FF", "#00A36C", "#CCCCFF",
+ "#8A9A5B", "#DFFF00", "#E4D00A", "#40E0D0", "#FFBF00", "#FF7F50", "#F4BB44", "#FAC898", "#EC5800"];
 const changeColor = () => {
   count++;
   if (count >= colors.length) count = 0;
