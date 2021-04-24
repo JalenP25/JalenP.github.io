@@ -1,21 +1,63 @@
+body {
+    background-color: coral;
+}
+
 .holder{
     border-style: outset;
     border-width: thick;
     border-color: black;
     padding: 10px;
     display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 1px;
+    margin: 200px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* .quoteHolder{
+    border: 2px solid #ddd;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+} */
+
+#quote {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#character {
+    float: right;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 #divBtn {
-    margin: auto;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: flex;
-  }
+    width: 200px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-  #title {
-      text-align: center;
-  }
+#btn {
+    align-self: center;
+    border: 2px solid #666;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+#title {
+    text-align: center;
+}
